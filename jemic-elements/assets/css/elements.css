@@ -1,0 +1,91 @@
+.ttl{
+    font-size: 30px;
+    color: #0eb1c1;
+    background: #000000;
+    padding: 0 15px;
+}
+.inner{
+    width: 80%;
+    margin: 0 auto;
+}
+.box{
+    border: 2px dotted #cccccc;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+}
+a{ 
+    text-decoration: none;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/* page styling */
+
+.page-ttl {
+    position: relative;
+    font-size: 48px;
+    border-bottom: 4px solid #000000;    
+}
+
+.page-ttl:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 35%;
+    height: 4px;      
+    border-bottom: 4px solid #FF0000;
+    content: '';      
+}
+
+.heading {
+    padding: 5px;
+    background: #F2F2F2;
+    color: #333333;
+    font-size: 36px;
+    border: solid 1px #ddd;
+}
+.heading span {
+    padding-left: 10px;
+    border-left: 12px solid #004DA0;    
+}
+
+.link-ttl {
+    position: relative;
+    color: #004DA0;    
+    font-size: 36px;
+}
+.link-ttl a{
+    position:relative;    
+    padding-left: 55px;
+    color: #004DA0;
+}
+.link-ttl:before{
+    position: absolute;
+    left: 0;
+    width:45px;
+    height: 45px; 
+    content: url(../img/common/ico_link.png);       
+}
+.nav-list li{
+    position: relative;    
+    margin: 0 10px;   
+    float: left;
+    list-style: none;    
+    line-height: 1;
+}
+.nav-list li a{
+    position: relative;
+    padding-left: 30px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #4D4D4D;    
+}
+.nav-list li:before{        
+    position: absolute;
+    left: 0;
+    width: 21px;
+    height: 21px;    
+    content: url(../img/common/ico_nav_arrow.png);
+}

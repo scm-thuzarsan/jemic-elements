@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEMIC Elements Design</title>
+  <script type="text/javascript" src="assets/js/lib/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/elements/shCore.js"></script>
+  <script type="text/javascript" src="assets/js/elements/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="assets/js/elements/shBrushCss.js"></script>
+  <script type="text/javascript" src="assets/js/elements/shBrushJScript.js"></script>
+  <script type="text/javascript" src="assets/js/elements/shBrushXml.js"></script>
+  <link type="text/css" rel="stylesheet" href="assets/css/elements/shCore.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/elements/shThemeDefault.css" />
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = 'assets/js/elements/clipboard.swf';
+    SyntaxHighlighter.all();
+  </script>
+</head>
+<body>
+  <h1>JEMIC下層ページエレメントデザイン</h1>
+  <div class="inner">
+    <div class="box">
+      <p class="ttl">1. ページ大見出し</p>
+      <h2 class="page-ttl">会社概要</h2>
+      <pre class="brush: c-sharp;">
+        <h2 class="page-ttl">会社概要</h2>   
+      </pre>
+      <pre class="brush: c-sharp;">
+        .page-ttl {
+          position: relative;
+          font-size: 48px;
+          border-bottom: 4px solid #000000;    
+        }        
+        .page-ttl:after {
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 35%;
+          height: 4px;      
+          border-bottom: 4px solid #FF0000;
+          content: '';      
+        }
+      </pre>
+    </div>
+    <div class="box">
+      <p class="ttl">2. ページ中見出し</p>
+      <h3 class="heading"><span>組織概要</span></h3>
+      <pre class="brush: c-sharp;">
+        <h3 class="heading"><span>組織概要</span></h3> 
+      </pre>
+      <pre class="brush: c-sharp;">
+        .heading {
+          padding: 5px;
+          background: #F2F2F2;
+          color: #333333;
+          font-size: 36px;
+          border: solid 1px #ddd;
+        }
+        .heading span {
+          padding-left: 10px;
+          border-left: 12px solid #004DA0;    
+        }
+      </pre>
+    </div>
+    <div class="box">
+      <p class="ttl">3. ページ小見出し</p>
+      <h3 class="link-ttl"><a href="#">検定・検査業務関係</a></h3>
+      <pre class="brush: c-sharp;">
+        <h3 class="link-ttl"><a href="#">検定・検査業務関係</a></h3>
+      </pre>
+      <pre class="brush: c-sharp;">
+        .link-ttl {
+          position: relative;
+          color: #004DA0;    
+          font-size: 36px;
+        }
+        .link-ttl a{
+          position:relative;    
+          padding-left: 55px;
+          color: #004DA0;
+        }
+        .link-ttl:before{
+          position: absolute;
+          left: 0;
+          width:45px;
+          height: 45px; 
+          content: url(../img/common/ico_link.png);       
+        }
+        a{ 
+          text-decoration: none;
+        }
+        .clearfix:after {
+          display: block;
+          content: "";
+          clear: both;
+        }
+      </pre>
+    </div>
+    <div class="box">
+      <p class="ttl">4. ページ内ナビゲーション</p>
+      <br>
+      <ul class="nav-list clearfix">
+        <li><a href="#">組織概要</a></li>
+        <li><a href="#">組織図</a></li>
+        <li><a href="#">組織概要</a></li>
+        <li><a href="#">沿革</a></li>
+        <li><a href="#">業務実績等</a></li>
+        <li><a href="#">情報公開</a></li>
+      </ul>
+      <br>
+      <div>
+        <pre class="brush: c-sharp;">
+          <ul class="nav-list clearfix">
+            <li><a href="#">組織概要</a></li>
+            <li><a href="#">組織図</a></li>
+            <li><a href="#">組織概要</a></li>
+            <li><a href="#">沿革</a></li>
+            <li><a href="#">業務実績等</a></li>
+            <li><a href="#">情報公開</a></li>
+          </ul>
+        </pre>
+        <pre class="brush: c-sharp;">
+          .nav-list li{
+            position: relative;    
+            margin: 0 10px;   
+            float: left;
+            list-style: none;    
+            line-height: 1;
+          }
+          .nav-list li a{
+            position: relative;
+            padding-left: 30px;
+            font-size: 21px;
+            font-weight: bold;
+            color: #4D4D4D;    
+          }
+          .nav-list li:before{        
+            position: absolute;
+            left: 0;
+            width: 21px;
+            height: 21px;    
+            content: url(../img/common/ico_nav_arrow.png);
+          }
+        </pre>
+      </div>    
+    </div>
+  </div> 　　 　　 　　
+</body>
+
+</html>
